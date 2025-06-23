@@ -1,23 +1,25 @@
-import { defineConfig } from 'astro/config'
-import mdx from '@astrojs/mdx'
-import sitemap from '@astrojs/sitemap'
-
-import tailwind from '@astrojs/tailwind'
+// @ts-check
+import { defineConfig } from 'astro/config';
+import tailwindcss from "@tailwindcss/vite";
+import preact from "@astrojs/preact";
+import sitemap from "@astrojs/sitemap"
+import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://anujbarve.github.io/',
-    integrations: [mdx(), sitemap(), tailwind()],
-    markdown: {
-        shikiConfig: {
-          // Choose from Shiki's built-in themes (or add your own)
-          // https://shiki.style/themes
-          // Alternatively, provide multiple themes
-          // See note below for using dual light/dark themes
-          themes: {
-            light: 'poimandres',
-            dark: 'catppuccin-latte',
-          },
-        },
-      },
-})
+  site: "https://neonmint.efeele.dev",
+  integrations: [preact(), icon(), sitemap({
+    filter: (page) =>
+      !page.includes("/blog/tags") &&
+      !page.includes("/blog/techs"),
+  }),],
+
+  vite: {
+    plugins: [tailwindcss()],
+  },
+  markdown: {
+    shikiConfig: {
+      theme: 'github-dark'
+    },
+  },
+});

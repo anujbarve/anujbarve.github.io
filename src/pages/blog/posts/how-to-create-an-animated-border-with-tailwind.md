@@ -1,7 +1,7 @@
 ---
 layout: /src/layouts/MarkdownPostLayout.astro
 title: Create an Animated Border with Tailwind CSS
-author: Fernando López
+author: Anuj Barve
 description: "Add a dynamic touch to your designs with an animated border in Tailwind CSS. Learn how to use conic-gradient and animations to achieve an impressive visual effect. 🚀✨"
 image:
   url: "/images/posts/animated-borders-tailwind.webp"
@@ -65,7 +65,7 @@ If we add a background to the child container, we achieve the border effect:
   class="w-full max-w-lg bg-conic/[from_0deg] from-white to-white dark:from-black via-green-400 dark:to-black rounded-2xl p-px"
 >
   <!-- Parent container -->
-  <div class="p-10 rounded-2xl dark:dark:bg-zinc-900 bg-mint-50">
+  <div class="p-10 rounded-2xl dark:dark:bg-zinc-900 bg-purple-50">
     <!-- Child container -->
     <p class="text-white text-center font-semibold">
       By adding a background to the child container, we achieve the border effect

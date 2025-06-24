@@ -1,43 +1,39 @@
 ---
-layout:  /src/layouts/ProjectLayout.astro
-title: 'NeonMint'
-pubDate: 2025-04-05
-description: 'NeonMint is a modern, minimalist template crafted for developers and digital creatives.'
-languages: ["astro", "tailwind", "cloudflare", "javascript","vercel"]
+layout: /src/layouts/ProjectLayout.astro
+title: 'Synapse: Collaborative Learning Hub'
+pubDate: 2025-06-24
+description: 'Synapse is a collaborative learning platform empowering students to form study groups, share resources, and collaborate in real-time with built-in video/audio capabilities.'
+languages: ["html", "css", "vercel", "tailwind", "mysql"]
 image:
-  url: "/images/projects/neonmint.webp"
-  alt: "Thumbnail of Astro arches."
---- 
+  url: "/images/projects/synapse.png"
+  alt: "Thumbnail of the Synapse collaborative platform interface."
+---
 
-**NeonMint** is a modern, minimalist web template created for developers, designers, and digital creatives. This project aims to offer an elegant and functional visual experience, combining a dark-toned aesthetic with mint green accents to highlight content without distractions.
+**Synapse** is a modern collaborative learning hub designed for students to connect, form study groups, and work together in real time. With seamless text, audio, and video interactions, Synapse makes collaborative learning more accessible and engaging.
 
-Developed with **Astro** and styled with **TailwindCSS**, NeonMint focuses on speed, modularity, and a component-centered architecture.
+Built with **Next.js** and **TypeScript**, it leverages **Supabase** for authentication and database management, while **LiveKit** powers real-time communication.
 
 ## 🧩 Features
 
-- Responsive and minimalist design
-- Dark mode aesthetic with mint green accents
-- Clean and reusable UI components
-- Ideal for portfolios, dashboards or tech landing pages
-- Modern typography and clear visual hierarchy
-- Developed with **Astro**
-- Styled with **TailwindCSS**
+- Real-time video and audio rooms using LiveKit
+- Study group creation with invite-based access
+- Resource sharing spaces for collaborative documents
+- Built-in authentication and secure user data via Supabase
+- Responsive, accessible UI built with TailwindCSS
+- Reputation system to promote community participation
 
 ## 💡 Technologies used
 
-- Astro
+- Next.js (TypeScript)
+- Supabase (Database & Auth)
+- LiveKit (Real-time Audio/Video)
 - TailwindCSS
-- HTML5
-- JavaScript
-
+- Vercel (Deployment)
 
 ## 🌐 Demo
 
-👉 [View live demo](https://github.com/EFEELE/NeonMint) 
+👉 [View live demo](https://synapse-main.vercel.app/)
 
 ## 🎯 Objective
 
-The purpose of NeonMint is to combine style and functionality in a clean interface that enhances content without overwhelming the user. It's an exercise in design and development focused on visual detail and user experience.
-
-
-🚀 *Developed by EFEELE.*
+Synapse empowers students by providing a unified platform for collaborative study. It blends community interaction with powerful real-time tools to make learning productive, social, and fun.

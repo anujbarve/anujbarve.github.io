@@ -1,6 +1,4 @@
-Here’s your updated `README.md` reflecting that **this website is made for Anuj Barve**, while preserving credits to the **original NeonMint template**:
 
-````md
 # Anuj Barve Personal Website 🌐
 
 ## 🎯 Overview

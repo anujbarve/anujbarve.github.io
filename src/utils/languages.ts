@@ -5,6 +5,14 @@ export interface Language {
 }
 
 export const languages: Record<string, Language> = {
+  dart: {
+    name: "Dart",
+    iconName: "dart",
+  },
+  flutter: {
+    name: "Flutter",
+    iconName: "flutter",
+  },
   angular: {
     name: "Angular",
     iconName: "angular",

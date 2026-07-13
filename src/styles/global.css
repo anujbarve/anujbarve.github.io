@@ -245,7 +245,7 @@ a.inline-block.leading-5.pl-12{
 
 .blur-circle {
 	background-color: rgba(139, 92, 246, 0.29);
-	position: absolute;
+	position: fixed;
 	width: 200px;
 	height: 200px;
 	top: 100px;

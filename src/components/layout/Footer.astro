@@ -28,13 +28,14 @@ if (!staticData) {
         <Icon name="logo" aria-hidden="true" />
       </a>
     </div>
-    <div class="text-center">
+    <div class="flex flex-col items-center gap-1">
       <a
         href={staticData.data.github}
         class="flex items-center justify-center gap-3 text-base font-normal italic max-sm:text-sm"
         aria-label="About the website development"
         ><Icon name="code" aria-hidden="true" /> Developed by <strong>{staticData.data.alias}</strong>, with Astro</a
       >
+      <a href="/mantle/privacy-policy" class="text-xs font-normal text-zinc-500 dark:text-zinc-600 hover:text-purple-400 dark:hover:text-purple-400 transition-colors">Privacy Policy</a>
     </div>
     <div class="flex items-center justify-center gap-5" role="list" aria-label="Social media links">
       <Social link={`mailto:${staticData.data.email}`} iconName={staticData.data.emailIconName} label={`Send email to ${staticData.data.email}`} />

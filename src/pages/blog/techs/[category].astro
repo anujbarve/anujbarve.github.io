@@ -9,7 +9,7 @@ interface Frontmatter {
   title: string;
   pubDate: string;
   tags: string[];
-  image: string;
+  image: { url: string; alt: string };
 }
 export async function getStaticPaths(): Promise<Array<{params: {category: string}, props: {posts: MarkdownInstance<Frontmatter>[]}}>>{
   const allPosts: MarkdownInstance<Frontmatter>[] = await Astro.glob<Frontmatter>("../posts/*.md");

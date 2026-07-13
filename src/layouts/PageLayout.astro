@@ -1,0 +1,19 @@
+---
+import Layout from "./Layout.astro";
+const { frontmatter } = Astro.props;
+---
+
+<Layout
+  pageTitle={frontmatter.title}
+  description={frontmatter.description}
+  ogimage={frontmatter.image}
+>
+  <section class="relative mx-auto px-8 max-sm:px-4 flex flex-row justify-center gap-6">
+    <div class="w-64 max-xl:hidden"></div>
+    <article class="flex flex-col gap-8 max-w-3xl max-md:w-full pb-10 pt-8 mt-8 px-14 max-md:px-10 max-sm:px-4 dark:bg-transparent bg-white dark:border-0 border border-neutral-100 rounded-2xl">
+      <div class="markdown" id="content">
+        <slot />
+      </div>
+    </article>
+  </section>
+</Layout>
